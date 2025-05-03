@@ -1,0 +1,8 @@
+
+- name: /tools
+  link: /tools/
+- name: /posts
+  link: /posts/
+- name: /work
+  link: /work/
+ 

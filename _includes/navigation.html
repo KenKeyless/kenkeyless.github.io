@@ -1,0 +1,24 @@
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> 
+  <div class="site-header">  
+    <!-- Avatar -->  
+    <!--<div class="site-avatar-column">  
+     <a class="site-avatar" href="{{ '/ipinfo' | relative_url }}">  
+      <img src="{{ site.avatar | relative_url }}" alt="Site Avatar" width="30" class="d-inline-block align-top m-0 avatar">  
+     </a>  
+    </div>-->  
+    <!-- Site Name -->  
+    <div class="site-name-column">  
+     <a class="site-name-link" href="{{ '/ipinfo' | relative_url }}">  
+      <span id="site-name">{{ site.name }}</span>  
+     </a>  
+    </div>  
+  </div>
+  
+  <nav class="site-navigation">  
+   <ul>  
+    {% for item in site.data.navigation %}  
+      <a href="{{ item.link | relative_url }}" {% if page.url == item.link %} class="active" {% endif %}>{{ item.name }}</a>  
+    {% endfor %}  
+   </ul>  
+  </nav> 
